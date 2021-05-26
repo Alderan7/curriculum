@@ -848,3 +848,7 @@ footer, footer p{
     text-transform: uppercase;
     font-weight:700;
 }
+
+.justificado{
+    text-align: justify;
+}
