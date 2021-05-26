@@ -12,12 +12,6 @@ h1{
     text-align: center;
 }
 
-/*:root{
-    --verdeAzulado:rgb(56, 163, 149) ;
-    Estas instrucciones sirven para definir VARIABLES en css.
-    En este caso estamos guardando un color, pero podríamos guardar, por ejemplo el tamaño de letra
-    --fuente-general: 3.8rem;
-}*/
 
 *{
     box-sizing: border-box;
@@ -27,23 +21,17 @@ h1{
 html{
     font-size:62.5%;
     font-family:'Krub', sans-serif;
-    /*Esta linea de aquí (y la que tenemos abajo)*/
     scroll-snap-type: y mandatory;
 }
 
 body{
     font-size:16px;
-    /*Y esta de aquí, nos ayudan con el uso de los REM. 
-    Este tipo de medida de fuente equivale a 1rem=10px SI PONEMOS ESTAS DOS INSTRUCCIONES
-    EN NUESTRO CÓDIGO*/
 }
 
-/*Entoces, a partir de aquí ya podríamos gastarlo sin problemas.*/
-/*El h1 mide 38 pixeles SIN IMPORTAR LA PANTALLA EN LA QUE ESTÉ*/
 .titulo{
     text-align: center;
     font-size:3.8rem;
-    /*font-size: var(--fuente-general)*/
+
     
 }
 
@@ -54,10 +42,14 @@ header{
     align-items: center;
     justify-content: center;
 }
-/*y el trozo del span mide aproximadamente 20 píxeles*/
+
+header>a{
+    text-decoration: none;
+    color:black;
+}
+
 .titulo span{
     font-size: 2rem;
-    /*color: var(--verdeAzulado);*/
 }
 
 .navegacion-principal{
@@ -777,3 +769,4 @@ footer, footer p{
 .sin__punto{
     list-style: none;
 }
+
