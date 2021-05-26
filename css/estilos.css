@@ -26,14 +26,15 @@ html{
 
 body{
     font-size:16px;
+    font-weight: 600;
 }
 
 .titulo{
     text-align: center;
-    font-size:3.8rem;
-
-    
+    font-size:3.8rem;    
 }
+
+
 
 header{
     height: 15rem;
@@ -557,6 +558,10 @@ p{
 
 /**PORTFOLIO**/
 
+.portfolio__seccion{
+    margin-bottom:2rem;
+}
+
 .portfolio{
     display:flex;
     padding:2rem;
@@ -614,7 +619,28 @@ p{
     background-size: 200%;
 }
 
+.icono{
+    width:45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: black;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
 
+.enlace__git{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction: row;
+    width: 100%;
+}
+
+.texto__git{
+    display:inline-block;
+    font-size: 2.5rem;
+}
 
 
 
@@ -745,12 +771,20 @@ footer, footer p{
     
 }
 
-.main__estudios>div, .main__trabajos>div, .main__competencias>div{
+.main__trabajos>div, .main__competencias>div{
     border: 1px solid black;
     width:40rem;
     height: 35rem;
     padding:1rem;
 }
+
+.main__estudios--tamaño{
+    height: 20rem;
+    border: 1px solid black;
+    width:40rem;
+    padding:1rem;
+}
+
 .main__foto{
     background-image: url("../img/Foto\ Andres\ 2.jpeg");
     background-repeat: no-repeat;
@@ -770,3 +804,47 @@ footer, footer p{
     list-style: none;
 }
 
+.enlace__in{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction: row;
+}
+
+.texto__in{
+    font-size: 2.5rem;
+}
+
+.icono__in{
+    width:45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: #435CBD;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.enlaces__cv{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+
+.icono__eu{
+    width:45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: #313385;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lenguajes{
+    text-transform: uppercase;
+    font-weight:700;
+}
