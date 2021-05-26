@@ -1,0 +1,779 @@
+    
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+    
+*,*:before,*:after{
+    box-sizing: inherit;
+}
+
+h1{
+    text-align: center;
+}
+
+/*:root{
+    --verdeAzulado:rgb(56, 163, 149) ;
+    Estas instrucciones sirven para definir VARIABLES en css.
+    En este caso estamos guardando un color, pero podríamos guardar, por ejemplo el tamaño de letra
+    --fuente-general: 3.8rem;
+}*/
+
+*{
+    box-sizing: border-box;
+}
+
+
+html{
+    font-size:62.5%;
+    font-family:'Krub', sans-serif;
+    /*Esta linea de aquí (y la que tenemos abajo)*/
+    scroll-snap-type: y mandatory;
+}
+
+body{
+    font-size:16px;
+    /*Y esta de aquí, nos ayudan con el uso de los REM. 
+    Este tipo de medida de fuente equivale a 1rem=10px SI PONEMOS ESTAS DOS INSTRUCCIONES
+    EN NUESTRO CÓDIGO*/
+}
+
+/*Entoces, a partir de aquí ya podríamos gastarlo sin problemas.*/
+/*El h1 mide 38 pixeles SIN IMPORTAR LA PANTALLA EN LA QUE ESTÉ*/
+.titulo{
+    text-align: center;
+    font-size:3.8rem;
+    /*font-size: var(--fuente-general)*/
+    
+}
+
+header{
+    height: 15rem;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+/*y el trozo del span mide aproximadamente 20 píxeles*/
+.titulo span{
+    font-size: 2rem;
+    /*color: var(--verdeAzulado);*/
+}
+
+.navegacion-principal{
+    color:white;
+    margin-bottom:0;
+}
+
+#titulo2{
+    text-align: center;
+    font-size:6rem;
+    padding:5rem;
+    margin:0px;
+    color:white;
+    text-shadow: 3px 3px 3px #000;
+}
+.navegacion-principal a{
+    text-decoration: none;
+    color:white;
+    font-size: 2.5rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    padding-top:1rem;
+    padding-bottom:1rem;
+    border-radius: 10px;
+    transition: background-color 0.5s;
+}
+
+.navegacion-principal a:hover{
+    background-color: coral;
+
+}
+
+.fondo-navegador{
+    width:100%;
+    background-color: #0097A7;
+    height: 20rem;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    margin:auto;
+    box-shadow: -1px 5px 5px black ;
+    margin:0px;
+}
+
+.contenedor{
+    width:120rem;
+    height: 20rem;
+    margin:auto;
+    display:flex;
+    flex-direction: column;
+    align-items:center;  
+    transition: height 0.7s;  
+}
+
+
+@media(min-width:768px){
+    .fondo-navegador{
+        width:100%;
+        background-color: #0097A7;
+        height: 6rem;
+        display:flex;
+        justify-content: space-around;
+        align-items: center;   
+        box-shadow: -1px 5px 5px black ;
+        margin:0px;
+        transition: height 0.7s;   
+    }
+    .contenedor{
+        width:120rem;
+        height: 5rem;
+        margin-top:0;
+        margin-bottom:0px;
+        margin-left: auto;
+        margin-right: auto;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center; 
+        transition: height 0.7s;    
+    }
+}
+
+@media(min-width:768px){
+    .fondo-escritorio{
+        background-image: url("../img/escritorio.png");
+        height: 50rem;
+        margin:0px;
+        background-repeat: no-repeat;
+        background-size:cover;
+        background-position: center;
+        position:relative;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom:2rem;
+        transition:height 0.7s;
+    }
+}
+
+.fondo-escritorio{
+    background-image: url("../img/escritorio.png");
+    height: 70rem;
+    margin:0px;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    position:relative;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom:2rem;
+    transition:height 0.7s;
+}
+
+@media(min-width:768px){
+    .fondo-escritorio{
+        background-image: url("../img/escritorio.png");
+        height: 50rem;
+        margin:0px;
+        background-repeat: no-repeat;
+        background-size:cover;
+        background-position: center;
+        position:relative;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom:2rem;
+        transition:height 0.7s;
+    }
+}
+
+.contenido{
+    position:absolute;
+    background-color: rgba(0,0,0,0.5);
+    height: 100%;
+    width: 100%;
+    top:0px;
+    left:0px;
+    position:relative;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color:white;
+}
+
+#contactar{
+    background-color: #0097A7;
+    color: white;
+    text-decoration: none;
+    padding-right: 2.5rem;
+    padding-left: 2.5rem;
+    padding-top:1.5rem;
+    padding-bottom:1.5rem;
+    border-radius: 10px 10px 10px 10px;
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-top: 1.5rem;
+    transition: background-color 0.5s;
+}
+
+#contactar:hover{
+    background-color: coral;
+}
+
+body{
+    background-image: linear-gradient(to top, #DFE9F3 0%, white 50%);
+}
+
+main{
+
+    max-width: 110rem;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 12px 10px 12px -2px #011413;
+    padding-bottom: 3rem;
+    border: 0.5px solid black;
+}
+
+#servicios{
+    position:relative;
+    display: grid;
+    grid-template-areas:
+        'h h h'
+        'd a e'
+        'd a e';
+
+}
+
+#titulo-servicios{
+    text-align:center;
+    grid-area: 'h';
+    font-size:3.8rem;
+
+}
+
+#titulo-servicios2{
+    text-align:center;
+    font-size:3.8rem;
+}
+
+
+#uno{
+    grid-area:'d';
+    display:flex;
+    align-items: center;
+    justify-content: center; 
+    flex-direction: column;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-bottom: 5rem;
+}
+
+#dos{
+    grid-area:'a';
+    display:flex;
+    align-items: center;
+    justify-content: center; 
+    flex-direction: column;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-bottom: 5rem;
+}
+
+#tres{
+    grid-area:'e';
+    display:flex;
+    align-items: center;
+    justify-content: center; 
+    flex-direction: column;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-bottom: 5rem;
+}
+
+.centrado{
+    display:flex;
+    align-items: center;
+    justify-content: center; 
+    flex-direction: column;
+
+}
+
+.iconos{
+    height: 15rem;
+    max-width: 15rem;
+    border-radius: 50%;
+    display:flex;
+    align-items: center;
+    justify-content: center; 
+    background-color:#ffb34f;    
+}
+
+h3{
+    color:#0097A7;;
+}
+
+section div+p{
+    text-align: justify;
+}
+
+
+
+.formulario{
+    background-color: rgb(148, 148, 148);
+    width: min(60rem, 100%);
+    margin: 0 auto;
+    border-radius: 15px;
+    padding: 2rem;
+
+}
+
+.formulario fieldset{
+    border: none;
+}
+
+.formulario legend{
+text-align: center;
+font-size: 1.8rem;
+text-transform: uppercase;
+font-weight: 700;
+margin-bottom:2rem;
+color:#ffb34f;
+
+}
+
+#servicios::before{
+    position:absolute;
+    content:"";
+    top:100%;
+    bottom:0;
+    background-color: black;
+    height: 0.3rem;
+    width:66.6%;
+    margin-left:16.6%;
+    margin-right:16.6%;
+}
+
+
+
+.campo{
+    margin-bottom: 1rem;
+
+
+}
+
+.campo label{
+    color: white;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+.campo input, .campo textarea{
+    width: 100%;
+}
+
+.campo textarea{
+    width: 100%;
+    height: 10rem;
+}
+
+footer, footer p{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 5rem;
+
+}
+
+.boton{
+    background-color: #0097A7;
+    color: white;
+    text-decoration: none;
+    padding-right: 2.5rem;
+    padding-left: 2.5rem;
+    padding-top:1.5rem;
+    padding-bottom:1.5rem;
+    border-radius: 10px 10px 10px 10px;
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-top: 1.5rem;
+    transition: background-color 0.5s;
+}
+
+.boton:hover{
+    background-color: coral;
+}
+
+.derecha{
+    display:flex;
+    flex-direction: row-reverse;
+    justify-content: right;
+    align-items: center;
+}
+
+/**PAGINA INTRODUCCION**/
+
+
+.main__contenedor{
+    display:grid;
+    gap:2rem;
+    grid-template-areas:    "i i"
+                            "w w"
+                            "b b"
+                            "p p";
+    text-align: justify;
+}
+
+@media(min-width:768px){
+    .main__contenedor{
+        display:grid;
+        gap:2rem;
+        grid-template-areas:    "i i i"
+                                "w b p"
+                                "w b p";
+        text-align: justify;
+    }
+}
+
+.main__intro{
+    grid-area: i;
+    margin:2rem;
+    border: 1px solid black;
+    box-shadow: 2px 2px 2px black;    
+}
+
+.main__titulo{
+    text-align: center;
+}
+.main__web{
+    grid-area: w;
+    border: 1px solid black;
+    margin: 2rem;
+    box-shadow: 2px 2px 2px black;
+    display:flex;
+    flex-direction: column;
+    gap:2rem;
+    justify-content: center;
+    align-items: center;
+}
+.main__BBDD{
+    grid-area: b;
+    margin:2rem;
+    border: 1px solid black;
+    box-shadow: 2px 2px 2px black;
+    display:flex;
+    flex-direction: column;
+    gap:2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__programacion{
+    grid-area: p;
+    border: 1px solid black;
+    margin: 2rem;
+    box-shadow: 2px 2px 2px black;
+    display:flex;
+    flex-direction: column;
+    gap:2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+@media(min-width:768px){
+    .main__web{
+        grid-area: w;
+        border: 1px solid black;
+        margin-left: 2rem;
+        box-shadow: 2px 2px 2px black;
+        display:flex;
+        flex-direction: column;
+        gap:2rem;
+        justify-content: center;
+        align-items: center;
+    }
+    .main__BBDD{
+        grid-area: b;
+        border: 1px solid black;
+        box-shadow: 2px 2px 2px black;
+        margin:2rem 0;
+        display:flex;
+        flex-direction: column;
+        gap:2rem;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .main__programacion{
+        grid-area: p;
+        border: 1px solid black;
+        margin-right: 2rem;
+        box-shadow: 2px 2px 2px black;
+        display:flex;
+        flex-direction: column;
+        gap:2rem;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}
+
+.main__seccion{
+    border-radius: 50%;
+    background-color: coral;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 20rem;
+    height: 20rem;
+    margin:2rem;
+    transition: background-color 0.7s;
+}
+
+.icon{
+    transition:stroke 0.7s;
+}
+
+.main__seccion:hover .icon{
+    stroke:white;
+}
+
+.main__seccion:hover{
+    background-color: rgb(92, 60, 48);
+}
+
+h2{
+    text-align: center;
+}
+
+p{
+    margin: 2rem;
+}
+
+/**PAGINA SOBRE MI**/
+
+
+
+.titulo__sobremi{
+    padding-left:2rem;
+}
+
+/**PORTFOLIO**/
+
+.portfolio{
+    display:flex;
+    padding:2rem;
+    gap:2rem;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.blogcafe{
+    background-image: url("../img/blogcafe.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+.pokedex{
+    background-image: url("../img/pokedex.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 80%;
+}
+
+.restaurantejapones{
+    background-image: url("../img/restaurantejapones.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.frontendstore{
+    background-image: url("../img/frontendstore.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: background-size 0.7 ease-in-out;
+}
+
+.portfolio__seccion{
+    width: 40rem;
+    height: 40rem;
+    border:1px solid black;
+    box-shadow: 2px 2px 2px black;     
+    -webkit-transition: box-shadow 0.7 ease-in-out;
+    transition:  box-shadow 0.7 ease-in-out;
+}
+
+.frontendstore:hover{
+    background-size: 200%;
+}
+
+.portfolio__seccion:hover{
+    box-shadow: inset 0 0 15px 10px black;
+    background-size: 200%;
+}
+
+
+
+
+
+/**CONTACTO**/
+
+
+.formulario{
+    background-color: rgb(148, 148, 148);
+    width: min(60rem, 100%);
+    margin: 0 auto;
+    border-radius: 15px;
+    padding: 2rem;
+
+}
+
+.formulario fieldset{
+    border: none;
+}
+
+.formulario legend{
+text-align: center;
+font-size: 1.8rem;
+text-transform: uppercase;
+font-weight: 700;
+margin-bottom:2rem;
+color:#ffb34f;
+
+}
+
+#servicios::before{
+    position:absolute;
+    content:"";
+    top:100%;
+    bottom:0;
+    background-color: black;
+    height: 0.3rem;
+    width:66.6%;
+    margin-left:16.6%;
+    margin-right:16.6%;
+}
+
+
+
+.campo{
+    margin-bottom: 1rem;
+
+
+}
+
+.campo label{
+    color: white;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+.campo input, .campo textarea{
+    width: 100%;
+}
+
+.campo textarea{
+    width: 100%;
+    height: 10rem;
+}
+
+footer, footer p{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 5rem;
+
+}
+
+.boton{
+    background-color: #0097A7;
+    color: white;
+    text-decoration: none;
+    padding-right: 2.5rem;
+    padding-left: 2.5rem;
+    padding-top:1.5rem;
+    padding-bottom:1.5rem;
+    border-radius: 10px 10px 10px 10px;
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-top: 1.5rem;
+    transition: background-color 0.5s;
+}
+
+.boton:hover{
+    background-color: coral;
+}
+
+.derecha{
+    display:flex;
+    flex-direction: row-reverse;
+    justify-content: right;
+    align-items: center;
+}
+
+/**CURRICULUM VITAE**/
+
+
+
+
+
+.main__presentacion{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content:space-between;
+    align-items: center;
+}
+
+@media(min-width:768px){
+    .main__presentacion{
+        display:flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content:space-between;
+        align-items: center;
+    }
+}
+
+.main__estudios, .main__trabajos,  .main__competencias{
+    display: flex;
+    flex-wrap: wrap;
+    gap:2rem;
+    justify-content: space-evenly;
+    
+}
+
+.main__estudios>div, .main__trabajos>div, .main__competencias>div{
+    border: 1px solid black;
+    width:40rem;
+    height: 35rem;
+    padding:1rem;
+}
+.main__foto{
+    background-image: url("../img/Foto\ Andres\ 2.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    min-width: 20rem;
+    height: 20rem;
+    margin-left:2rem;
+
+}
+
+.main__texto{
+    text-align: justify;
+}
+
+.sin__punto{
+    list-style: none;
+}
