@@ -582,7 +582,7 @@ p{
 .blogcafe{
     background-image: url("../img/blogcafe.png");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100%;
     background-position: center;
 }
 
@@ -591,35 +591,34 @@ p{
 .pokedex{
     background-image: url("../img/pokedex.png");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100%;
     background-position: 80%;
 }
 
 .restaurantejapones{
     background-image: url("../img/restaurantejapones.png");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100%;
     background-position: center;
 }
 
 .frontendstore{
     background-image: url("../img/frontendstore.png");
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-size: 100%;
+    background-position: center;    
 }
 
 .portfolio__seccion{
     width: 40rem;
     height: 40rem;
     border:1px solid black;
-    box-shadow: 2px 2px 2px black;     
-    -webkit-transition: box-shadow 0.7 ease-in-out;
-    transition:  box-shadow 0.7 ease-in-out;
+    box-shadow: inset 0 0 5px 5px black;
+    transition: background-size 700ms linear, box-shadow 700ms linear;
 }
 
 .portfolio__seccion:hover{
-    box-shadow: inset 0 0 15px 10px black;
+    box-shadow: inset 0 0 20px 15px black;
     background-size: 200%;
 }
 
