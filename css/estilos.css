@@ -609,6 +609,13 @@ p{
     background-position: center;    
 }
 
+.festivalmusica{
+    background-image: url("../img/festivalmusica.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;   
+}
+
 .portfolio__seccion{
     width: 40rem;
     height: 40rem;
