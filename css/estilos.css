@@ -567,6 +567,11 @@ p{
 
 /**PORTFOLIO**/
 
+.enlaces-portfolio{
+    text-decoration: none;
+    text-align: center;
+}
+
 .portfolio__seccion{
     margin-bottom:2rem;
 }
