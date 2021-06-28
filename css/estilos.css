@@ -591,6 +591,12 @@ p{
     background-position: center;
 }
 
+.barberia{
+    background-image: url("../img/barberia.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
 
 
 .pokedex{
